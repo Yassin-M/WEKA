@@ -67,7 +67,7 @@ public class WekaKudeatzailea {
 
     public void atributuNominala(Attribute pAtributua, AttributeStats pStats){
         for(int i = 0;i<pAtributua.numValues();i++){
-            System.out.println("Identifikatzailea: " + pAtributua.name() + ", Kopurua: " + pStats.nominalCounts[i]);
+            System.out.println("Identifikatzailea: " + pAtributua.value(i) + ", Kopurua: " + pStats.nominalCounts[i]);
         }
     }
 
